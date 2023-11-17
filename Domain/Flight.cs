@@ -12,7 +12,7 @@ public class Flight
     public int EstimatedDuration { get; set; }
     // Prop de navigation
     public virtual Plane? Plane { get; set; }
-    public virtual IList<Passenger>?  Passenger { get; set; }
+    public virtual IList<Passenger>?  Passengers { get; set; }
 
     public override string ToString()
     {

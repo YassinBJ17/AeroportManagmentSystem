@@ -4,13 +4,13 @@ namespace AMS.ApplicationCore.Domain;
 
 public class Staff:Passenger
 {
-    public DateTime EmploymentDate { get; set; }
+    public DateTime EmployementDate { get; set; }
     public string? Function { get; set; }
     public float Salary { get; set; }
 
     public override string ToString()
     {
-        return "EmployementDate = " + EmploymentDate +
+        return "EmployementDate = " + EmployementDate +
             " , Function = " + Function +
             " , Salary = " + Salary;
     }
