@@ -6,6 +6,8 @@ public class Flight
 {
     public string Destination { get; set; } = String.Empty;
     public string Departure { get; set; } = String.Empty;
+
+    public bool isFlight { get; set; }
     public DateTime FlightDate { get; set; }
     public int FlightId { get; set; }
     public DateTime EffectiveArrival { get; set; }

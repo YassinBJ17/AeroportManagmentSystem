@@ -1,10 +1,13 @@
-﻿namespace AMS.ApplicationCore.Domain;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AMS.ApplicationCore.Domain;
 
 public class Passenger
 {
 #nullable disable
 
     public DateTime BirthDate { get; set; }
+    [Key] // forcer en tant que clé primaire
     public int PassportNumber { get; set; }
     public string EmailAddress { get; set; }
     public string FirstName {  get; set; }
